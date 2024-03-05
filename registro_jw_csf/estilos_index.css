@@ -1,0 +1,187 @@
+:root{
+    --cabecera: #000000;
+    --fuente_blanca:#ffffff;
+    --fuente_azul:#6699FF;
+    --border_indice:#ffffff;
+    --grupo:#4A6DA7;
+    --enlace:#FF6600;
+    --mapa:#FF6600;
+    --cuerpo_fondo:#262626;
+    --cuerpo_fondo_blanco :#ffffff;
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background: var(--cuerpo_fondo);
+
+}
+
+*::before, *::after{
+    box-sizing: inherit;
+}
+
+header{
+    background-color:var(--cabecera);
+    position: sticky;
+    top: 0;
+   
+    
+}
+
+.titulo_cabecera{
+    font-family: 'roboto', calibri, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--fuente_blanca);
+    padding: 10px;
+}
+
+.caja_img{
+    background: url(/img/imgjwjesus.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    height: 150px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 15px auto;
+   
+}
+
+.sectores{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    margin: 30px 0;
+    background: #ffffff;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 7px;
+    
+
+}
+.caja_grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grupo);
+    padding: 5px;
+    gap: 15px;
+    width: 90%;
+    border-radius: 8px;
+    
+}
+
+.indice{
+    
+    width: 25px;
+    height: 25px;
+    border: 2px solid  var(--border_indice);
+    color: var(--fuente_blanca);
+    font-family: 'roboto', calibri , sans-serif;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.grupo{
+    font-family: 'roboto', calibri, sans-serif ;
+    color: var(--fuente_blanca);
+    font-size: 2.4rem;
+    text-align: center;
+    
+}
+
+.cajaDeSeleccion{
+    margin: 20px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
+.seleccion{
+    
+    background: var(--enlace);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--fuente_blanca);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'roboto', calibri, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.ico_mapa{
+    background: var(--mapa);
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+
+}
+
+
+.caja_linea{
+    padding: 5px;
+    
+
+}
+.linea{
+    margin: 0 auto;
+    border: 2px solid red;
+    width: 80%;
+    border-radius: 2px;
+}
+
+
+
+/*--------------------hover----------------*/
+
+.seleccion:hover{
+    background: var(--grupo);
+    color: var(--fuente_blanca);
+    transition: all .3s ease;
+}
+
+.ico_mapa:hover{
+    background: var(--grupo);
+}
+
+
+/*media queries*/
+
+@media (min-width:760px) {
+    .caja_img{
+        width: 700px;
+        height: 300px;
+
+    }    
+}
+
+@media (min-width:980px) {
+    .caja_img{
+        width: 890px;
+        height: 300px;
+
+    }    
+}
